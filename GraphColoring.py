@@ -28,3 +28,34 @@ for _ in range(int(input("Enter the number of edges: "))):
     e = input("Enter edge (subject1 subject2): ").split()
     g.addedge(e[0], e[1])
 print(f"\nMinimum time slots needed: {g.timeslots()}")
+
+
+"""Enter the number of subjects: 4
+Enter subject 1: maths
+Enter the number of students for maths: 3
+Enter student 1 for maths: alice
+Enter student 2 for maths: bob
+Enter student 3 for maths: charlie
+Enter subject 2: physics
+Enter the number of students for physics: 3
+Enter student 1 for physics: alice
+Enter student 2 for physics: charlie
+Enter student 3 for physics: david
+Enter subject 3: chemistry
+Enter the number of students for chemistry: 3
+Enter student 1 for chemistry: bob
+Enter student 2 for chemistry: charlie
+Enter student 3 for chemistry: eve
+Enter subject 4: biology
+Enter the number of students for biology: 3
+Enter student 1 for biology: alice
+Enter student 2 for biology: david
+Enter student 3 for biology: eve
+Enter the number of edges: 4
+Enter edge (subject1 subject2): maths physics
+Enter edge (subject1 subject2): maths chemistry
+Enter edge (subject1 subject2): physics chemistry
+Enter edge (subject1 subject2): physics biology
+
+Minimum time slots needed: 3
+"""
