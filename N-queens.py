@@ -23,7 +23,7 @@ def print_solutions(solutions):
     if solutions: 
         for sol in solutions: 
             for row in sol: 
-                print(''.join(['Q' if num==1 else '.' for num in row]))  
+                print(' '.join(['Q' if num==1 else '.' for num in row]))  
             print() 
     else: 
         print("Not Possible!") 
